@@ -1,11 +1,7 @@
 # OpenModelica Launcher App
 
 ## Objective
-This project is a PyQt6 desktop application used to launch an OpenModelica executable with user-defined start time and stop time.
-
-This project is a PyQt6 desktop application used to launch an OpenModelica executable with user-defined start time and stop time.
-
-The application allows users to browse and select the compiled OpenModelica model executable, enter simulation start and stop times, validate the inputs, and run the model directly from the GUI.
+This project is a PyQt6-based desktop application that launches OpenModelica simulation models with user-defined start and stop times. It provides a simple GUI to select compiled models, validate inputs, and execute simulations efficiently.
 
 Direct executable available in the `launcher_exe` folder.
 
@@ -22,8 +18,13 @@ Direct executable available in the `launcher_exe` folder.
 - Validate inputs
 - Execute OpenModelica model
 
+## Impact
+This tool simplifies the execution of OpenModelica simulation models by providing a user-friendly interface, reducing manual command-line usage and minimizing input errors during simulation setup.  
+
 ## Validation Condition
-0 <= start time < stop time < 5
+Start time and stop time must satisfy:
+
+0 ≤ start time < stop time ≤ 5
 
 ## How to Run
 1. Install requirements:
@@ -36,8 +37,7 @@ Direct executable available in the `launcher_exe` folder.
 - app/main.py
 - model_files/
 - requirements.txt
-- README.md
-- ## Screenshots
+
 
 ## Screenshots
 
@@ -85,7 +85,7 @@ To run the application:
 3. Double-click `main.exe`
 4. If Windows shows a security warning, click:
 
-   * More info
-   * Run anyway
+   - More info
+   - Run anyway
 
    
